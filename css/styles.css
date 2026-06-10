@@ -1117,6 +1117,7 @@ a {
   .hero__image-container {
     max-width: 360px;
     margin: 0 auto;
+    padding-right: 0;
   }
 }
 
