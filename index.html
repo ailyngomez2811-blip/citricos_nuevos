@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unidad de Cítricos Nuevos · SENA La Angostura</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════
+      NAVBAR (Glassmorphic & Floating)
+  ═══════════════════════════════════════ -->
+  <nav class="navbar">
+    <div class="container navbar__container">
+      <a href="#inicio" class="navbar__logo">
+        <img src="img/logoSena.png" alt="Logo SENA" class="logo__img" onerror="this.style.display='none'" />
+        <span class="logo__text">Unidad Citricos Nuevos</span>
+      </a>
+      
+      <!-- Botón de Hamburguesa -->
+      <button class="navbar__toggle" id="navbarToggle" aria-label="Abrir menú">
+        <span class="navbar__toggle-line"></span>
+        <span class="navbar__toggle-line"></span>
+        <span class="navbar__toggle-line"></span>
+      </button>
+
+      <div class="navbar__links" id="navbarLinks">
+        <a href="#inicio" class="navbar__link">Inicio</a>
+        <a href="#descripcion" class="navbar__link">La Unidad</a>
+        <a href="#ficha" class="navbar__link">Ficha Técnica</a>
+        <a href="#variedades" class="navbar__link">Variedades</a>
+        <a href="#galeria" class="navbar__link">Galería</a>
+        <a href="#plagas" class="navbar__link">Fitosanitario</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <header id="inicio" class="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <span class="hero__eyebrow">Centro de Formación Agroindustrial · SENA La Angostura</span>
+      <h1 class="hero__title">Unidad de<br><span class="hero__title-accent">Cítricos Nuevos</span></h1>
+      <p class="hero__desc">
+        Unidad productiva agrícola de vanguardia orientada a la formación práctica, el aprendizaje
+        técnico y la producción sostenible de frutas cítricas de alta calidad en el sur del Huila.
+      </p>
+      <div class="hero__actions">
+        <a href="#descripcion" class="btn btn--primary">Conocer Unidad</a>
+        <a href="#ficha" class="btn btn--secondary">Ver Ficha Técnica</a>
+      </div>
+      <div class="hero__badges">
+        <span class="badge badge--light">🌱 Unidad Agrícola</span>
+        <span class="badge badge--light">Ficha 3115709</span>
+      </div>
+    </div>
+
+    <div class="hero__image-container">
+      <div class="hero__image-frame">
+        <img src="img/imagenprincipal.jpeg" alt="lider de cítricos en SENA La Angostura" class="hero__img"
+          onerror="this.parentElement.classList.add('hero__image-frame--placeholder')" />
+        <div class="hero__image-caption"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════
+       ESTADÍSTICAS
+  ═══════════════════════════════════════ -->
+  <section class="stats-bar reveal">
+    <div class="container">
+      <div class="stats-bar__grid">
+        <div class="stat">
+          <span class="stat__number" data-target="120">0</span>
+          <span class="stat__label">Plantas Sembradas</span>
+        </div>
+        <div class="stat stat--divider">
+          <span class="stat__number">3.900</span>
+          <span class="stat__label">m² de área total</span>
+        </div>
+        <div class="stat stat--divider">
+          <span class="stat__number" data-target="5">0</span>
+          <span class="stat__label">Variedades</span>
+        </div>
+        <div class="stat stat--divider">
+          <span class="stat__number">6×6</span>
+          <span class="stat__label">m densidad de siembra</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       DESCRIPCIÓN
+  ═══════════════════════════════════════ -->
+  <section id="descripcion" class="section reveal">
+    <div class="container container--split">
+      <div class="split__text">
+        <span class="section__eyebrow">¿Qué es la unidad?</span>
+        <h2 class="section__title">Formación práctica con cultivos reales</h2>
+        <p>
+          En el <strong>Centro de Formación Agroindustrial SENA La Angostura</strong> se
+          encuentra esta unidad productiva destinada a la formación práctica y la producción
+          agrícola. Cuenta con manejo agronómico adecuado y permite fortalecer los conocimientos
+          técnicos de los aprendices mediante labores de campo, mantenimiento del cultivo y
+          control fitosanitario.
+        </p>
+        <p>
+          Los cítricos son frutos de gran importancia alimenticia: aportan
+          <strong>vitamina C</strong>, minerales y antioxidantes que benefician la salud
+          de los consumidores.
+        </p>
+      </div>
+
+      <div class="split__image">
+        <div class="img-frame">
+          <img src="img/descripcion.jpg" alt="unidad citricos"
+            onerror="this.parentElement.classList.add('img-frame--placeholder')" />
+          <span class="img-placeholder-label"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FICHA TÉCNICA
+  ═══════════════════════════════════════ -->
+  <section id="ficha" class="section section--tinted reveal">
+    <div class="container">
+      <span class="section__eyebrow">Especificaciones</span>
+      <h2 class="section__title">Ficha Técnica del Cultivo</h2>
+
+      <div class="ficha-grid">
+        <!-- Tarjeta 1 -->
+        <div class="ficha-card">
+          <div class="ficha-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+              <line x1="7" y1="7" x2="7.01" y2="7"></line>
+            </svg>
+          </div>
+          <div class="ficha-card__content">
+            <div class="ficha-card__label">Nombre de la unidad</div>
+            <div class="ficha-card__value">Unidad de Cítricos Nuevos</div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="ficha-card">
+          <div class="ficha-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          </div>
+          <div class="ficha-card__content">
+            <div class="ficha-card__label">Tipo de unidad</div>
+            <div class="ficha-card__value">Unidad Productiva Agrícola</div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="ficha-card">
+          <div class="ficha-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+          </div>
+          <div class="ficha-card__content">
+            <div class="ficha-card__label">Edad del cultivo</div>
+            <div class="ficha-card__value">29 de Noviembre del 2024</div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="ficha-card">
+          <div class="ficha-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="9" y1="3" x2="9" y2="21"></line>
+              <line x1="15" y1="3" x2="15" y2="21"></line>
+              <line x1="3" y1="9" x2="21" y2="9"></line>
+              <line x1="3" y1="15" x2="21" y2="15"></line>
+            </svg>
+          </div>
+          <div class="ficha-card__content">
+            <div class="ficha-card__label">Área del cultivo</div>
+            <div class="ficha-card__value">3.900 m²</div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 5 -->
+        <div class="ficha-card">
+          <div class="ficha-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="5" y1="9" x2="19" y2="9"></line>
+              <line x1="5" y1="15" x2="19" y2="15"></line>
+              <path d="M12 5v14M5 5h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"></path>
+            </svg>
+          </div>
+          <div class="ficha-card__content">
+            <div class="ficha-card__label">Densidad de siembra</div>
+            <div class="ficha-card__value">6 × 6 metros</div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 6 -->
+        <div class="ficha-card">
+          <div class="ficha-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
+          <div class="ficha-card__content">
+            <div class="ficha-card__label">Número de plantas</div>
+            <div class="ficha-card__value">120 plantas</div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 7 -->
+        <div class="ficha-card">
+          <div class="ficha-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M12 22a7 7 0 0 0 7-7c0-4.3-7-11-7-11S5 10.7 5 15a7 7 0 0 0 7 7z"></path>
+            </svg>
+          </div>
+          <div class="ficha-card__content">
+            <div class="ficha-card__label">Tipo de riego</div>
+            <div class="ficha-card__value">Instalado · sin funcionamiento</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       VARIEDADES
+  ═══════════════════════════════════════ -->
+  <section id="variedades" class="section reveal">
+    <div class="container">
+      <span class="section__eyebrow">Diversidad del cultivo</span>
+      <h2 class="section__title">Variedades presentes</h2>
+
+      <div class="variedades-grid">
+        <!-- Variedad 1 -->
+        <div class="variedad-card reveal-card">
+          <div class="variedad-card__img-wrap">
+            <img src="img/tangelo.jpg" alt="Naranja Tangelo"
+              onerror="this.parentElement.classList.add('img-wrap--placeholder')" />
+            <span class="img-placeholder-label"></span>
+          </div>
+          <div class="variedad-card__body">
+            <span class="variedad-tag variedad-tag--naranja">Naranja</span>
+            <h3 class="variedad-card__name">Tangelo</h3>
+            <p class="variedad-card__sci">Citrus × tangelo</p>
+          </div>
+        </div>
+
+        <!-- Variedad 2 -->
+        <div class="variedad-card reveal-card">
+          <div class="variedad-card__img-wrap">
+            <img src="img/Washington.png" alt="Naranja Washington"
+              onerror="this.parentElement.classList.add('img-wrap--placeholder')" />
+            <span class="img-placeholder-label"></span>
+          </div>
+          <div class="variedad-card__body">
+            <span class="variedad-tag variedad-tag--naranja">Naranja</span>
+            <h3 class="variedad-card__name">Washington</h3>
+            <p class="variedad-card__sci">Citrus sinensis</p>
+          </div>
+        </div>
+
+        <!-- Variedad 3 -->
+        <div class="variedad-card reveal-card">
+          <div class="variedad-card__img-wrap">
+            <img src="img/tahiti.png" alt="Limón Tahití"
+              onerror="this.parentElement.classList.add('img-wrap--placeholder')" />
+            <span class="img-placeholder-label"></span>
+          </div>
+          <div class="variedad-card__body">
+            <span class="variedad-tag variedad-tag--limon">Limón</span>
+            <h3 class="variedad-card__name">Tahití</h3>
+            <p class="variedad-card__sci">Citrus × latifolia</p>
+          </div>
+        </div>
+
+
+
+        <!-- Variedad 5 -->
+        <div class="variedad-card reveal-card">
+          <div class="variedad-card__img-wrap">
+            <img src="img/cleopatra.webp" alt="Mandarina Cleopatra"
+              onerror="this.parentElement.classList.add('img-wrap--placeholder')" />
+            <span class="img-placeholder-label"></span>
+          </div>
+          <div class="variedad-card__body">
+            <span class="variedad-tag variedad-tag--mandarina">Mandarina</span>
+            <h3 class="variedad-card__name">Cleopatra</h3>
+            <p class="variedad-card__sci">Citrus reshni</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+      GALERÍA DE IMÁGENES
+  ═══════════════════════════════════════ -->
+  <section id="galeria" class="section section--tinted reveal">
+    <div class="container">
+      <span class="section__eyebrow">Registro fotográfico</span>
+      <h2 class="section__title">Galería del Cultivo</h2>
+
+      <div class="galeria-grid">
+        <div class="galeria-item">
+          <img src="img/arbol1.jpg" alt="Foto del cultivo 1"
+            onerror="this.parentElement.classList.add('galeria-item--placeholder')" />
+          <span class="img-placeholder-label"></span>
+        </div>
+        <div class="galeria-item">
+          <img src="img/arbol2.jpg" alt="Foto del cultivo 2"
+            onerror="this.parentElement.classList.add('galeria-item--placeholder')" />
+          <span class="img-placeholder-label"></span>
+        </div>
+        <div class="galeria-item">
+          <img src="img/arbol3.jpg" alt="Foto del cultivo 3"
+            onerror="this.parentElement.classList.add('galeria-item--placeholder')" />
+          <span class="img-placeholder-label"></span>
+        </div>
+        <div class="galeria-item galeria-item--wide">
+          <img src="img/imgcompleta.jpg" alt="Foto panorámica del cultivo"
+            onerror="this.parentElement.classList.add('galeria-item--placeholder')" />
+          <span class="img-placeholder-label"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       PLAGAS Y LABORES CULTURALES
+  ═══════════════════════════════════════ -->
+  <section id="plagas" class="section reveal">
+    <div class="container container--split-custom">
+      <!-- Columna Plagas -->
+      <div class="plagas-col">
+        <span class="section__eyebrow">Fitosanitario</span>
+        <h2 class="section__title">Plagas identificadas</h2>
+
+        <div class="plagas-list">
+          <!-- Hormiga arriera -->
+          <div class="plaga-card">
+            <div class="plaga-card__icon-container">
+              <!-- Ícono de hormiga: cuerpo segmentado con antenas y 6 patas -->
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Cabeza -->
+                <circle cx="24" cy="10" r="5" fill="currentColor" opacity="0.85" />
+                <!-- Antenas -->
+                <line x1="21" y1="6" x2="15" y2="2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                <circle cx="15" cy="2" r="1.2" fill="currentColor" />
+                <line x1="27" y1="6" x2="33" y2="2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                <circle cx="33" cy="2" r="1.2" fill="currentColor" />
+                <!-- Tórax -->
+                <ellipse cx="24" cy="20" rx="4.5" ry="5.5" fill="currentColor" opacity="0.75" />
+                <!-- Abdomen -->
+                <ellipse cx="24" cy="34" rx="6" ry="8" fill="currentColor" opacity="0.9" />
+                <!-- Patas superiores -->
+                <line x1="20" y1="18" x2="11" y2="14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                <line x1="28" y1="18" x2="37" y2="14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                <!-- Patas medias -->
+                <line x1="20" y1="22" x2="10" y2="22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                <line x1="28" y1="22" x2="38" y2="22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                <!-- Patas inferiores -->
+                <line x1="20" y1="26" x2="11" y2="31" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                <line x1="28" y1="26" x2="37" y2="31" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="plaga-card__name">Hormiga arriera</h4>
+              <p class="plaga-card__sci">Atta spp. — cortadora de follaje</p>
+            </div>
+          </div>
+
+          <!-- Cochinilla -->
+          <div class="plaga-card">
+            <div class="plaga-card__icon-container">
+              <!-- Ícono de cochinilla: cuerpo ovalado con segmentos y patas cortas -->
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Cuerpo principal ovalado -->
+                <ellipse cx="24" cy="26" rx="16" ry="11" fill="currentColor" opacity="0.85" />
+                <!-- Segmentos del cuerpo -->
+                <line x1="13" y1="22" x2="13" y2="32" stroke="white" stroke-width="1.2" opacity="0.5" />
+                <line x1="18" y1="18" x2="18" y2="35" stroke="white" stroke-width="1.2" opacity="0.5" />
+                <line x1="24" y1="15" x2="24" y2="37" stroke="white" stroke-width="1.2" opacity="0.5" />
+                <line x1="30" y1="18" x2="30" y2="35" stroke="white" stroke-width="1.2" opacity="0.5" />
+                <line x1="35" y1="22" x2="35" y2="32" stroke="white" stroke-width="1.2" opacity="0.5" />
+                <!-- Cabeza -->
+                <circle cx="24" cy="15" r="5" fill="currentColor" opacity="0.95" />
+                <!-- Antenas -->
+                <line x1="21" y1="12" x2="17" y2="8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                <line x1="27" y1="12" x2="31" y2="8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                <!-- Patas (3 pares) -->
+                <line x1="14" y1="26" x2="6" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <line x1="14" y1="29" x2="6" y2="29" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <line x1="14" y1="32" x2="6" y2="35" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <line x1="34" y1="26" x2="42" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <line x1="34" y1="29" x2="42" y2="29" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <line x1="34" y1="32" x2="42" y2="35" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="plaga-card__name">Cochinilla</h4>
+              <p class="plaga-card__sci">Planococcus citri — chupadora</p>
+            </div>
+          </div>
+
+          <!-- Pulgón -->
+          <div class="plaga-card">
+            <div class="plaga-card__icon-container">
+              <!-- Ícono de pulgón: cuerpo en gota con estiletes chupadores y cornículos -->
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Abdomen en gota -->
+                <ellipse cx="24" cy="30" rx="11" ry="13" fill="currentColor" opacity="0.85" />
+                <!-- Tórax -->
+                <ellipse cx="24" cy="18" rx="7" ry="6" fill="currentColor" opacity="0.8" />
+                <!-- Cabeza -->
+                <circle cx="24" cy="10" r="5" fill="currentColor" />
+                <!-- Estiletes (boca chupadora) -->
+                <line x1="24" y1="14" x2="24" y2="42" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  opacity="0.6" />
+                <!-- Antenas largas -->
+                <line x1="21" y1="7" x2="11" y2="2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                <line x1="27" y1="7" x2="37" y2="2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                <!-- Cornículos (sifones en abdomen) -->
+                <line x1="18" y1="34" x2="14" y2="40" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <line x1="30" y1="34" x2="34" y2="40" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <!-- Patas -->
+                <line x1="18" y1="18" x2="9" y2="14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                <line x1="17" y1="22" x2="8" y2="22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                <line x1="30" y1="18" x2="39" y2="14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                <line x1="31" y1="22" x2="40" y2="22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="plaga-card__name">Pulgón</h4>
+              <p class="plaga-card__sci">Aphis spiraecola — chupador</p>
+            </div>
+          </div>
+
+          <!-- Minador de hoja -->
+          <div class="plaga-card">
+            <div class="plaga-card__icon-container">
+              <!-- Ícono de polilla/mariposa minadora: alas extendidas y cuerpo delgado -->
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Ala superior izquierda -->
+                <path d="M22 22 Q8 10 6 20 Q8 28 22 26Z" fill="currentColor" opacity="0.75" />
+                <!-- Ala superior derecha -->
+                <path d="M26 22 Q40 10 42 20 Q40 28 26 26Z" fill="currentColor" opacity="0.75" />
+                <!-- Ala inferior izquierda -->
+                <path d="M22 26 Q6 28 8 38 Q14 42 22 32Z" fill="currentColor" opacity="0.55" />
+                <!-- Ala inferior derecha -->
+                <path d="M26 26 Q42 28 40 38 Q34 42 26 32Z" fill="currentColor" opacity="0.55" />
+                <!-- Cuerpo -->
+                <ellipse cx="24" cy="24" rx="3" ry="14" fill="currentColor" />
+                <!-- Cabeza -->
+                <circle cx="24" cy="10" r="3.5" fill="currentColor" />
+                <!-- Antenas -->
+                <line x1="22" y1="8" x2="16" y2="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <line x1="26" y1="8" x2="32" y2="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <!-- Trazo de mina en hoja -->
+                <path d="M10 40 Q18 36 26 38 Q34 40 38 44" stroke="currentColor" stroke-width="1.5"
+                  stroke-linecap="round" stroke-dasharray="3 2" opacity="0.5" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="plaga-card__name">Minador de hoja</h4>
+              <p class="plaga-card__sci">Phyllocnistis citrella — minador</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna Labores -->
+      <div class="labores-col">
+        <span class="section__eyebrow">Mantenimiento</span>
+        <h2 class="section__title">Labores culturales</h2>
+
+        <div class="labores-list">
+          <div class="labor-item">
+            <span class="labor-item__num">01</span>
+            <span class="labor-item__text">Fertilización</span>
+          </div>
+          <div class="labor-item">
+            <span class="labor-item__num">02</span>
+            <span class="labor-item__text">Control de malezas</span>
+          </div>
+          <div class="labor-item">
+            <span class="labor-item__num">03</span>
+            <span class="labor-item__text">Deschuponado</span>
+          </div>
+          <div class="labor-item">
+            <span class="labor-item__num">04</span>
+            <span class="labor-item__text">Control de plagas y enfermedades</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+      FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <img src="img/logoSena.png" alt="Logo SENA" onerror="this.style.display='none'" />
+        </div>
+        <div class="footer__text">
+          <h3>SENA Centro La Angostura</h3>
+          <p>Líderes en formación agroindustrial para el desarrollo regional y sostenible.</p>
+        </div>
+      </div>
+      <div class="footer__meta">
+        <div class="footer__info-item">
+          <strong>Programa:</strong>
+          <span>GAE (Ficha 3115709)</span>
+        </div>
+        <div class="footer__info-item">
+          <strong>Ubicación:</strong>
+          <span>Campoalegre, Huila - Colombia</span>
+        </div>
+        <div class="footer__info-item">
+          <strong>Proyecto:</strong>
+          <span>Unidad de Cítricos Nuevos (2026)</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 SENA Regional Huila. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
